@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ENIGMA</title>
+</head>
+<body>
+    <h1>ENIGMA</h1>
+    <main class="container" id="container1">
+        <form action="" id="rotores">
+            <div class="divRotor" onclick="style.backgroundColor = ('rgb(13, 26, 145)')"><label for="firstRotor" id="firstRotorValue" class="rotorValue">1</label></div>
+            <input type="range" name="firstRotor" id="firstRotor" class="inputRotores"min="1" max="26" value="1" oninput="firstRotorValue.innerHTML = firstRotor.value">
+            <label for="firstRotor" class="rotorName">1º Rotor</label>
+
+            <br>
+
+            <div class="divRotor" onclick="style.backgroundColor = ('rgb(13, 26, 145)')"><label for="secondRotor" id="secondRotorValue" class="rotorValue">1</label></div>
+            <input type="range" name="secondtRotor" id="secondRotor" class="inputRotores"min="1" max="26" value="1" oninput="secondRotorValue.innerHTML = secondRotor.value">
+            <label for="secondtRotor" class="rotorName">2º Rotor</label>
+
+            <br>
+
+            <div class="divRotor" onclick="style.backgroundColor = ('rgb(13, 26, 145)')"><label for="thirdRotor" id="thirdRotorValue" class="rotorValue">1</label></div>
+            <input type="range" name="tirdRotor" id="thirdRotor" class="inputRotores"min="1" max="26" value="1" oninput="thirdRotorValue.innerHTML = thirdRotor.value">
+            <label for="thirdRotor" class="rotorName">3º Rotor</label>
+
+            <br>
+           
+            <input type="button" value="Reset" onclick="resetRotorSelection()" class="reset" id="resetRotor">
+        </form>
+        <div class="container" id="container2">
+            <form action="" id="swap" onkeyup="change()">
+                <input type="reset" value="Reset" class="reset" onclick="resetWordsConnection()">
+                <br>
+            </form>
+            <div class="container" id="container3">
+                <form action="">
+                    <input type="text" name="userWord" id="userWordInput" autocomplete="off">
+                    <label for="userWordLabel" id="userWordLabel">Letra</label>
+                    <input type="button" value="&#8656; Codicar" id="submit" onclick="wordInput()">
+                </form>
+                <div id="divOutput">
+                    <div class="reset" onclick="resetOutput()">Reset</div>
+                    <p id="output">Saída</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+    <script src="settings.js"></script>
+</body>
+</html>

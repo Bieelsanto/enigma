@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(14, 14, 66);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(44, 39, 75);
+    color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.425);
+}
+
+form#rotores{
+    display: inline-block;
+    background-color: rgb(125, 129, 187);
+    width: auto;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 4px;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.425);
+}
+form#rotores>label, form#rotores>input.inputRotores{
+    color: rgb(13, 23, 83);
+    font-weight: 600;
+}
+
+form#rotores>div.divRotor{
+    text-align: center;
+    display: inline-block;
+    width: 25px;
+    background-color: rgba(255, 0, 0, 0.74);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+form#rotores>div.divRotor:hover{
+    cursor: pointer;
+    background-color: rgb(90, 13, 13);
+}
+
+form#rotores>div.divRotor>label:hover{
+    cursor: pointer;
+}
+
+input#resetRotor{
+    margin-top: 15px;
+    margin-left: 80px;
+}
+
+.container{
+    display: flex;
+}
+
+.reset{
+    border: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(51, 57, 104);
+    color: white;
+    font-family: monospace;
+    border-radius: 4px;
+}
+
+.reset:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+form#swap{
+    display: flex;
+    background-color: rgb(203, 195, 224);
+    padding: 10px;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    justify-content: space-around;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+}
+
+input.wordInput, label.wordLabel{
+    margin: 5px;
+}
+
+input.wordInput{
+    width: 20px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+label.wordLabel{
+    font-family: monospace;
+}
+
+div#container3{
+    flex-direction: column;
+    text-align: center;
+}
+
+input#userWordInput{
+    width: 20px;
+    margin-left: 10px;
+    border: 2px solid #0077ff;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+label#userWordLabel{
+    display: none;
+}
+
+input#submit{
+    margin: 0px 0px 0px 10px;
+    border: none;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(51, 57, 104);
+    color: white;
+    font-family: monospace;
+    border-radius: 4px;
+}
+
+input#submit:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    transition: 0.2s;
+}
+
+div#divOutput{
+    margin-left: 10px;
+    margin-top: 30px;
+    border: 1px solid white;
+    padding: 5x;
+    text-align: center;
+    width: 120px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+}
+
+div#divOutput>p{
+    color: white;
+    word-wrap: break-word;
+    font-size: 1.1em;
+}
+
